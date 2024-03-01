@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #3f4c76;
+        line-height: 48px;
+      }
+      h2 {
+        text-align: center;
+        font-weight: lighter;
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+        border-radius: 5%;
+        max-width: 60%;
+      }
+      p {
+        text-align: center;
+        margin: 0 auto;
+        padding: 2%;
+        border: 1px solid #3f4c76;
+        border-radius: 2px;
+      }
+      button {
+        display: block;
+        margin: auto;
+        font-size: 20px;
+        background: #c24284;
+        color: white;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        transition: all 200ms ease;
+        cursor: pointer;
+        background: white;
+        color: #c24284;
+      }
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I Love Yoga!🧘‍♀️</h1>
+    <h2>Yoga improves <em>strength, balance and flexibility.</em></h2>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/039/original/Header_Image_-_Yoga_Poses_For_Health_Benefits.jpeg.jpg?1675034741"
+      alt="yoga"
+    />
+    <br />
+    <p>
+      Regardless of your level of yoga expertise, if you’re practicing
+      regularly, you can feel better from head to toe. Yoga offers physical and
+      mental health benefits for people of all ages. <br />
+      Slow movements and deep breathing increase blood flow and warm up muscles,
+      while holding a pose can build strength.
+    </p>
+    <br />
+    <br />
+    <button class="sign-up">Sign Up For A Class</button>
+    <a
+      href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-benefits-of-yoga"
+      target="_blank"
+      class="learn more"
+    >
+      <br />
+      <div class="”message”">
+        <strong>Learn more about the benefits of yoga</strong>
+      </div>
+    </a>
+    <br />
+    <span class="coder">Coded by Megan</span>
+    <script>
+      function contact() {
+        let name = prompt("What is your name?");
+        let level = prompt("How many years have you practiced Yoga?");
+        if (level <= 2) {
+          alert(name + ", Sign up for a Vinyasa Flow Yoga Class. Namaste");
+        } else {
+          alert(name + ", Sign up for a Power Yoga Class. Namaste");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", contact);
+    </script>
+  </body>
+</html>
